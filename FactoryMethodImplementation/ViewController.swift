@@ -22,24 +22,33 @@ class ViewController: UIViewController {
 
     @IBAction func briocheTapped(_ sender: Any) {
         let factory = BriocheFactory()
-        currentBread = factory.createBread()
-        currentBreadLabel.text = currentBread?.bake()
-        weightLabel.text = currentBread?.updateWeight()
-        priceLabel.text = currentBread?.updatePrice()
+        guard currentBread != nil else {
+            let currentBread = factory.createBread()
+            currentBreadLabel.text = currentBread.bake()
+            weightLabel.text = "Weight: \(currentBread.weight)"
+            priceLabel.text = "Price: \(currentBread.price)"
+            return
+        }
     }
     @IBAction func campagneTapped(_ sender: Any) {
         let factory = CampagneFactory()
-        currentBread = factory.createBread()
-        currentBreadLabel.text = currentBread?.bake()
-        weightLabel.text = currentBread?.updateWeight()
-        priceLabel.text = currentBread?.updatePrice()
+        guard currentBread != nil else {
+            let currentBread = factory.createBread()
+            currentBreadLabel.text = currentBread.bake()
+            weightLabel.text = "Weight: \(currentBread.weight)"
+            priceLabel.text = "Price: \(currentBread.price)"
+            return
+        }
     }
     @IBAction func croissantTapped(_ sender: Any) {
         let factory = CroissantFactory()
-        currentBread = factory.createBread()
-        currentBreadLabel.text = currentBread?.bake()
-        weightLabel.text = currentBread?.updateWeight()
-        priceLabel.text = currentBread?.updatePrice()
+        guard currentBread != nil else {
+            let currentBread = factory.createBread()
+            currentBreadLabel.text = currentBread.bake()
+            weightLabel.text = "Weight: \(currentBread.weight)"
+            priceLabel.text = "Price: \(currentBread.price)"
+            return
+        }
     }
     
 }
