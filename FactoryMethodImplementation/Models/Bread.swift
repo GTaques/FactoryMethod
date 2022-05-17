@@ -13,7 +13,17 @@ protocol Bread {
     var price: Double { get set }
     
     func bake() -> String
-    
+    func updateWeight() -> String
+    func updatePrice() -> String
+}
+
+extension Bread {
+    func updateWeight() -> String {
+        return "Weight: \(self.weight)"
+    }
+    func updatePrice() -> String {
+        return "Price: \(self.price)"
+    }
 }
 
 class BriocheBread: Bread {
@@ -24,6 +34,7 @@ class BriocheBread: Bread {
     func bake() -> String {
         return "Brioche Is Being Baked!"
     }
+    
 }
 
 class CampagneBread: Bread {

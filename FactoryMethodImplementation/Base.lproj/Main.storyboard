@@ -72,26 +72,46 @@
                                 <color key="textColor" systemColor="systemGreenColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOM-Rb-KAG">
+                                <rect key="frame" x="15" y="517" width="384" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMI-8S-0zM">
+                                <rect key="frame" x="15" y="557.5" width="384" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="M4F-PQ-7xH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="6bs-a0-SV2"/>
+                            <constraint firstItem="cMI-8S-0zM" firstAttribute="top" secondItem="aOM-Rb-KAG" secondAttribute="bottom" constant="20" id="Af6-cr-Hbq"/>
                             <constraint firstItem="kvB-MU-F2Y" firstAttribute="top" secondItem="M4F-PQ-7xH" secondAttribute="bottom" constant="60" id="N1X-pw-YsP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aOM-Rb-KAG" secondAttribute="trailing" constant="15" id="OWl-ZP-8p1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P5Q-B2-01G" secondAttribute="trailing" constant="15" id="ObR-eU-fV1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LH2-sY-E23" secondAttribute="trailing" constant="15" id="bif-4h-fU4"/>
+                            <constraint firstItem="aOM-Rb-KAG" firstAttribute="top" secondItem="P5Q-B2-01G" secondAttribute="bottom" constant="20" id="ecn-jB-6Bu"/>
                             <constraint firstItem="P5Q-B2-01G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="grn-mD-9ul"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kvB-MU-F2Y" secondAttribute="trailing" constant="15" id="i7Z-pt-eIu"/>
+                            <constraint firstItem="aOM-Rb-KAG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="lHP-0d-D3s"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M4F-PQ-7xH" secondAttribute="trailing" constant="15" id="lQN-5D-uwO"/>
                             <constraint firstItem="LH2-sY-E23" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="mSN-i8-lEU"/>
                             <constraint firstItem="M4F-PQ-7xH" firstAttribute="top" secondItem="LH2-sY-E23" secondAttribute="bottom" constant="30" id="njf-VF-9TV"/>
                             <constraint firstItem="kvB-MU-F2Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="taE-zF-Qw8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cMI-8S-0zM" secondAttribute="trailing" constant="15" id="vMP-gp-gVG"/>
                             <constraint firstItem="P5Q-B2-01G" firstAttribute="top" secondItem="kvB-MU-F2Y" secondAttribute="bottom" constant="40" id="wRJ-DP-gsw"/>
                             <constraint firstItem="LH2-sY-E23" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="xNn-en-HJL"/>
+                            <constraint firstItem="cMI-8S-0zM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="yme-kX-Ds2"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="currentBreadLabel" destination="P5Q-B2-01G" id="QD7-eI-E0n"/>
+                        <outlet property="priceLabel" destination="cMI-8S-0zM" id="ac6-Pb-ijx"/>
+                        <outlet property="weightLabel" destination="aOM-Rb-KAG" id="Xum-4I-aG8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

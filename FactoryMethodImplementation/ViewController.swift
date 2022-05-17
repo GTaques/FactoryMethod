@@ -11,6 +11,9 @@ class ViewController: UIViewController {
     
     private var currentBread: Bread?
     @IBOutlet weak var currentBreadLabel: UILabel!
+    @IBOutlet weak var weightLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,16 +24,22 @@ class ViewController: UIViewController {
         let factory = BriocheFactory()
         currentBread = factory.createBread()
         currentBreadLabel.text = currentBread?.bake()
+        weightLabel.text = currentBread?.updateWeight()
+        priceLabel.text = currentBread?.updatePrice()
     }
     @IBAction func campagneTapped(_ sender: Any) {
         let factory = CampagneFactory()
         currentBread = factory.createBread()
         currentBreadLabel.text = currentBread?.bake()
+        weightLabel.text = currentBread?.updateWeight()
+        priceLabel.text = currentBread?.updatePrice()
     }
     @IBAction func croissantTapped(_ sender: Any) {
         let factory = CroissantFactory()
         currentBread = factory.createBread()
         currentBreadLabel.text = currentBread?.bake()
+        weightLabel.text = currentBread?.updateWeight()
+        priceLabel.text = currentBread?.updatePrice()
     }
     
 }
